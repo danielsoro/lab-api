@@ -16,12 +16,20 @@
 
 package com.github.dcconsultoria.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Objects;
 
 /**
  * @author <a href="mailto:danielsoro@apache.org">Daniel "soro" Cunha</a>
  */
+@Entity
 public class Input {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     public Input() {

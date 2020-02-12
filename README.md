@@ -28,3 +28,8 @@ Or you can use Docker to build the native executable using: `./mvnw package -Pna
 You can then execute your binary: `./target/lab-api-1.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image-guide .
+
+## Starting PostgreSQL database
+```
+$ docker run --name mypostgresdb -e POSTGRES_PASSWORD=psql123 -p 5432:5432 -d postgres
+```
